@@ -42,7 +42,9 @@ h1{
     font-size: 0,2rem;
     list-style: none;
 }
-
+.nav__ul{
+    margin-top: 20rem;
+}
 
 
 
@@ -200,20 +202,45 @@ h1{
     bottom: 1rem;
     left: 31rem;
 }
-.footer{
+#footer{
     background-color: rgb(215, 188, 154);
     color: rgb(82, 60, 33);
     font-size: 1.2rem;
     padding:4em;
     box-shadow: 0 0 1rem rgb(0 0 0); 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr ;
+    grid-template-areas: 
+    "section a"
+    "nav"
+    "section b";
+}
+.footer__logos{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .footer__logos li{
     list-style: none;
     margin-top:1rem ;
     margin-left: 1rem;
 }
+.fuction__section__a{
+    grid: "section a";
+    
 
+}
+.fuction__section__b{
+    grid: "section b";
+
+}
+.footer__nav{
+    grid:" nav" ;
+    justify-content: space-evenly;
+    margin-right: 10rem;
+    margin-top: 1rem;
+}
 
 
 
@@ -225,7 +252,6 @@ h1{
     .nav_ul {
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
     }
     .nav_ul li{
         padding: 1rem;
@@ -386,7 +412,6 @@ h1{
     /* footer */
     .footer{
         display: flex;
-        justify-content: space-around;
         font-size: 1.3rem;
     }
     .img_logo_wsp{
