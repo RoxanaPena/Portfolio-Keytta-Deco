@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 65.5%;
+  font-family: "roboto", sans-serif;
+}
+
+/* header */
+.img_logo {
+  height: 10rem;
+  width: 10rem;
+}
+
+.img_logo_bolso {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 3rem;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header div nav ul {
+  font-size: 1.8rem;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+}
+header div nav ul li {
+  font-size: 0, 2rem;
+  list-style: none;
+  margin: 0.5rem;
+}
+header div nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*media queries 768 */
+@media screen and (min-width: 768px) {
+  header div nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px) {
+  header div nav ul li {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  header div nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(146, 106, 57);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s ease-out;
+  }
+  header div nav ul li::before:hover {
+    width: 100%;
+  }
+  header div nav ul li::before a {
+    font-size: 1.7rem;
+  }
+  /*header */
+  .img_logo {
+    height: 14rem;
+    width: 14rem;
+    margin-left: 20rem;
+  }
+  .img_logo_bolso {
+    margin-top: 4rem;
+    margin-right: 3rem;
+  }
+  .nav_ul li {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .nav_ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(146, 106, 57);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.4s ease-out;
+  }
+  .nav nav ul li a {
+    font-size: 1.7rem;
+  }
+  .nav_ul li:hover::before {
+    width: 100%;
+  }
+}
+div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo" "texto1" "carrusel" "texto2";
+}
+div main {
+  grid-area: titulo;
+}
+div .main__tuno {
+  grid-area: texto1;
+  padding: 2rem;
+}
+div .main__tdos {
+  grid-area: texto2;
+  padding: 2rem;
+}
+div .titulo {
+  color: rgb(146, 106, 57);
+  font-family: "Aboreto", cursive;
+  margin: 1rem;
+}
+div .subtitulo {
+  color: rgb(167, 126, 76);
+  font-size: 2rem;
+  font-family: "Aboreto", cursive;
+  margin: 1rem;
+}
+div .main__carrusel {
+  grid-area: carrusel;
+  box-shadow: 0 0 6rem rgb(66, 61, 61);
+}
+div .main__carrusel img {
+  height: 100%;
+  width: 100%;
+}
+
+/* main de pag cocina */
+#menu {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo" "card" "article";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__titulo {
+  grid-area: titulo;
+  padding: 1rem;
+}
+
+.menu__card {
+  grid-area: card;
+}
+
+.menu__article {
+  grid-area: article;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 30rem;
+  height: 30rem;
+  margin: 1rem;
+  border-radius: 6px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card_contenido {
+  margin: 1rem;
+  color: rgb(146, 106, 57);
+  border: 1px solid rgb(146, 106, 57);
+  border-radius: 4px;
+  padding-top: 0.7rem;
+}
+
+.card_contenido:hover {
+  background: rgb(212, 181, 139);
+  color: #fff;
+}
+
+/*media queries 768 */
+@media screen and (min-width: 768px) {
+  div {
+    padding: 1rem;
+    margin-left: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "carrusel titulo" "carrusel texto1" "carrusel texto2";
+  }
+  div .titulo {
+    margin-bottom: 2rem;
+  }
+  div div img {
+    height: 50rem;
+    width: 500rem;
+  }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px) {
+  /*cocina */
+  .card {
+    width: 35rem;
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  .card_contenido {
+    width: 35rem;
+    height: 3rem;
+  }
+  .menu__article section {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+}
+article {
+  background-color: rgb(223, 209, 191);
+}
+article section ul {
+  padding: 0.5rem;
+}
+article section ul li {
+  list-style: none;
+  text-align: center;
+  padding: 0.5rem;
+}
+article section ul li div a {
+  display: none;
+  text-decoration: none;
+}
+article section ul li div a div {
+  color: black;
+}
+article div ul {
+  padding: 1rem;
+}
+article div ul li {
+  list-style: none;
+  text-align: center;
+}
+article div ul li a {
+  display: none;
+  text-decoration: none;
+}
+article div ul li a div {
+  color: black;
+}
+
+.logo__fp--debito {
+  box-shadow: 0 0 0.9rem rgb(161, 91, 34);
+}
+
+.logo__fp--credito {
+  box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+
+.logo__fp--efectivo {
+  box-shadow: 0 0 0.9rem rgb(51, 228, 66);
+}
+
+.logo__fp--masfp {
+  box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+
+/*media queries 768 */
+@media screen and (min-width: 768px) {
+  article section ul {
+    display: flex;
+    flex-direction: row;
+  }
+  article section ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  article section ul li div {
+    display: flex;
+    flex-direction: column;
+  }
+  article section ul li div a {
+    display: block;
+  }
+  article div {
+    display: flex;
+    justify-content: center;
+  }
+  article div ul li {
+    display: flex;
+    flex-direction: column;
+  }
+  article div ul li a {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  article section ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  article div ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/* footer */
+.img_logo_wsp {
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  bottom: 1rem;
+  left: 31rem;
+}
+
+footer {
+  background-color: rgb(215, 188, 154);
+  color: rgb(82, 60, 33);
+  font-size: 1.2rem;
+  padding: 4em;
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+footer section {
+  margin-bottom: 2rem;
+}
+footer div ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 6rem;
+}
+footer div ul li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+/*media queries 768 */
+@media screen and (min-width: 768px) {
+  .img_logo_wsp {
+    height: 5rem;
+    width: 5rem;
+    left: 68rem;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer div ul li {
+    margin: 1rem;
+  }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px) {
+  .img_logo_wsp {
+    left: 138rem;
+  }
+  footer section {
+    display: flex;
+    flex-direction: column;
+  }
+  footer div ul li {
+    margin: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

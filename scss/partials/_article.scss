@@ -1,0 +1,123 @@
+// vista mobile
+
+article{
+    background-color: rgb(223, 209, 191);
+
+    section{
+        ul{
+            padding: 0.5rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 0.5rem;
+
+                div{
+                    a{
+                        display: none;
+                        text-decoration: none;
+
+                        div{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div{
+        ul{
+            padding: 1rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+
+                a{
+                    display: none;
+                    text-decoration: none;
+                        div{
+                            color: black;
+                        }
+                }
+            }
+        }
+    }
+}
+.logo__fp--debito{
+    box-shadow: 0 0 0.9rem rgb(161, 91, 34);
+}
+.logo__fp--credito{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+.logo__fp--efectivo{
+    box-shadow: 0 0 0.9rem rgb(51, 228, 66);
+}
+.logo__fp--masfp{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+
+
+
+/*media queries 768 */
+
+@media screen and (min-width: 768px){
+
+    article{
+
+        section{
+            ul{
+                display: flex;
+                flex-direction: row;
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media screen and (min-width: 1200px){
+
+    article{
+        section{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        div{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    
+}
