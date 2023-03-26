@@ -1,0 +1,36 @@
+main{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "texto1"
+    "carrusel"
+    "texto2";
+
+    .main__titulo{
+        grid-area: titulo; 
+    }
+    
+    .main__tuno, .main__tdos{
+        margin: 3rem;
+    }
+    .main__tuno{
+        grid-area: texto1 ;
+    }
+    .main__tdos{
+        grid-area: texto2;
+    }
+    .carousel{
+        grid-area: carrusel;
+    }
+
+    section{
+        text-align: center;
+        margin: 1rem;
+    }
+
+}
+
+
+

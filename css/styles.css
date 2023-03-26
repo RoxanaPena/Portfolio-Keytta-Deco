@@ -9,6 +9,17 @@ html {
   font-family: "roboto", sans-serif;
 }
 
+.titulo {
+  color: rgb(146, 106, 57);
+  font-family: "Aboreto", cursive;
+}
+
+.subtitulo {
+  color: rgb(167, 126, 76);
+  font-size: 2rem;
+  font-family: "Aboreto", cursive;
+}
+
 /* header */
 .img_logo {
   height: 10rem;
