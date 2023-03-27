@@ -123,15 +123,49 @@ header div nav ul li a {
 main {
   text-align: center;
 }
-
-div {
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+main div section {
   display: flex;
   flex-direction: column;
 }
-div section {
-  display: flex;
+main div section img {
+  height: 30rem;
+  width: 30rem;
 }
 
+/*media queries 768 */
+@media screen and (min-width: 768px) {
+  main div {
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "basecruz trapecio" "conico tripode";
+  }
+  main .baseCruz {
+    grid-area: basecruz;
+  }
+  main .conico {
+    grid-area: conico;
+  }
+  main .trapecio {
+    grid-area: trapecio;
+  }
+  main .tripode {
+    grid-area: tripode;
+  }
+}
+/*media queries 1200 */
+@media screen and (min-width: 1200px) {
+  main div {
+    margin-left: 20rem;
+  }
+}
 article {
   background-color: rgb(223, 209, 191);
 }
