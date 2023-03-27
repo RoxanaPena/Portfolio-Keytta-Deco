@@ -1,76 +1,70 @@
+/* main de pag cocina */
 main{
-    text-align: center;
-
+    section{
+        text-align: center;
+    }
     div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        
-        section{
-            display: flex;
-            flex-direction: column;
-    
-            img{
-                height: 30rem;
-                width: 30rem;
+        div{
+            section{
+                margin-top: 1rem;
+                text-align: center;
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr ;
+                grid-template-areas: 
+                "titulo"
+                "card"
+                "article";
+                display: flex;
+                flex-direction: column;
+                align-items: center; 
             }
+                    .pm__card{
+                        grid-area: card;
+                    }
         }
     }
-
     article{
-        background-color: rgb(233, 210, 170);
-        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
 
         ul{
-            list-style: none;
+            li{
+                list-style: none;
+                margin: 0.5rem;
+            }
         }
+
+
     }
 }
-
 
 
 /*media queries 768 */
 
 @media screen and (min-width: 768px){
 
-    main{
-        div{
-            margin-left: 4rem;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: 
-            "portamacetas terminacion"
-            "macetas cerca";
+    div{
+        article{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 1rem;
         }
-            .portaMacetas{
-                grid-area: portamacetas;
-            }
-
-            .terminacion{
-                grid-area: terminacion;
-            }
-
-            .macetas{
-                grid-area: macetas;
-            }
-
-            .cerca{
-                grid-area: cerca;
-            }
     }
 }
 
 
-/*media queries 1200 */
+/* madia queries 1200 desktop */
 
 @media screen and (min-width: 1200px){
 
-    main{
-        div{
-            margin-left: 20rem;
-
-        }
+    div{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "titulo article"
+        "card article";
     }
 }
