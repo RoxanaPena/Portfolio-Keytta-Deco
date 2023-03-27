@@ -1,0 +1,30 @@
+#mainInformacion{
+    section{
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    #formasDePago{
+        text-align: center;
+        background-color: #e9edc9;
+    }
+    #cancelacion{
+        background-color: #fefae0;
+        text-align: left;
+        padding: 1rem;
+        
+        div{
+            padding: 1rem;
+        }
+    }
+    #leydecompra{
+        background-color: #faedcd;
+        text-align: center;
+
+        div{
+            li{
+                text-align: left;
+            }
+        }
+    }
+}

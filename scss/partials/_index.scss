@@ -1,3 +1,6 @@
+
+//arreglar img de carrusel
+
 main{
     display:grid;
     grid-template-columns:1fr;
@@ -11,10 +14,6 @@ main{
     .main__titulo{
         grid-area: titulo; 
     }
-    
-    .main__tuno, .main__tdos{
-        margin: 3rem;
-    }
     .main__tuno{
         grid-area: texto1 ;
     }
@@ -23,11 +22,35 @@ main{
     }
     .carousel{
         grid-area: carrusel;
+        height: 40rem;
     }
 
-    section{
-        text-align: center;
+    text-align: center;
+}
+
+/*media queries 768 */
+
+@media screen and (min-width: 768px){
+
+    main{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "carrusel titulo"
+        "carrusel texto1"
+        "carrusel texto2";
         margin: 1rem;
+    }
+}
+
+
+/*media queries 1200 */
+
+@media screen and (min-width: 1200px){
+
+    main{
+        font-size: 1.5rem   ;
     }
 
 }

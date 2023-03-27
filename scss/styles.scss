@@ -1,5 +1,19 @@
 @use './partials/reset';
 @use './partials/header';
-@use './partials/main';
+
+
+@use './partials/index';
+@use './partials/cocina';
+@use './partials/portamacetas';
+@use './partials/percheros';
+@use './partials/lamparas';
+@use './partials/veladores';
+@use './partials/contacto';
+@use './partials/informacion';
+
+
+
+
 @use './partials/article';
 @use './partials/footer';
+
