@@ -120,158 +120,31 @@ header div nav ul li a {
     width: 100%;
   }
 }
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "titulo" "texto1" "carrusel" "texto2";
+main section {
   text-align: center;
 }
-main .main__titulo {
-  grid-area: titulo;
-}
-main .main__tuno {
-  grid-area: texto1;
-}
-main .main__tdos {
-  grid-area: texto2;
-}
-main .carousel {
-  grid-area: carrusel;
-  height: 40rem;
-}
-
-/*media queries 768 */
-@media screen and (min-width: 768px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "carrusel titulo" "carrusel texto1" "carrusel texto2";
-    margin: 1rem;
-  }
-}
-/*media queries 1200 */
-@media screen and (min-width: 1200px) {
-  main {
-    font-size: 1.5rem;
-  }
-}
-/* main de pag cocina */
-#menu {
-  margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "titulo" "card" "article";
-  text-align: center;
+main div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.menu__titulo {
-  grid-area: titulo;
-  padding: 1rem;
-}
-
-.menu__card {
-  grid-area: card;
-}
-
-.menu__article {
-  grid-area: article;
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  width: 30rem;
+main div img {
   height: 30rem;
-  margin: 1rem;
-  border-radius: 6px;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  width: 30rem;
+}
+main div div {
+  flex-direction: column;
+  text-align: center;
 }
 
-.card img {
-  width: 100%;
-  height: 100%;
-}
-
-.card_contenido {
-  margin: 1rem;
-  color: rgb(146, 106, 57);
-  border: 1px solid rgb(146, 106, 57);
-  border-radius: 4px;
-  padding-top: 0.7rem;
-}
-
-.card_contenido:hover {
-  background: rgb(212, 181, 139);
-  color: #fff;
-}
-
-/*media queries 768 */
-@media screen and (min-width: 768px) {
-  div {
-    padding: 1rem;
-    margin-left: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "carrusel titulo" "carrusel texto1" "carrusel texto2";
-  }
-  div .titulo {
-    margin-bottom: 2rem;
-  }
-  div div img {
-    height: 50rem;
-  }
-}
-/* madia queries 1200 desktop */
+/*media queries 1200 */
 @media screen and (min-width: 1200px) {
-  /*cocina */
-  .card {
-    width: 35rem;
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  .card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  .card_contenido {
-    width: 35rem;
-    height: 3rem;
-  }
-  .menu__article section {
-    margin-right: 10rem;
-    margin-left: 10rem;
+  main div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
-#mainInformacion section {
-  padding: 1rem;
-  font-size: 1.3rem;
-}
-#mainInformacion #formasDePago {
-  text-align: center;
-  background-color: #e9edc9;
-}
-#mainInformacion #cancelacion {
-  background-color: #fefae0;
-  text-align: left;
-  padding: 1rem;
-}
-#mainInformacion #cancelacion div {
-  padding: 1rem;
-}
-#mainInformacion #leydecompra {
-  background-color: #faedcd;
-  text-align: center;
-}
-#mainInformacion #leydecompra div li {
-  text-align: left;
-}
-
 article {
   background-color: rgb(223, 209, 191);
 }
