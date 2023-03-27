@@ -49,6 +49,12 @@ header {
 }
 /*media queries 768 */
 @media screen and (min-width: 768px){
+    .img_logo_bolso{
+        height: 5rem;
+        width: 5rem;
+        margin-top: 3.4rem;
+        margin-right: 1rem;
+    }
 
     header{
         div{
@@ -59,7 +65,7 @@ header {
 
                     li{
                         a{
-                            font-size: 1.5rem;
+                            font-size: 1.6rem;
                         }
                     }
                 } 
@@ -71,72 +77,36 @@ header {
 @media screen and (min-width: 1200px){
 
     header{
+        .img_logo{
+            height: 18rem;
+            width: 18rem;
+            margin-left: 5rem;  
+        }
+        .img_logo_bolso{
+            height: 10rem;
+            width: 10rem;
+            margin-top: 4.1rem;
+            margin-right: 5rem;
+        }
+
         div{
             nav{
+                margin-top: 3.9rem;
                 ul{
                     li{
-                        display: flex;
-                        flex-direction: row;
-                        position: relative;
-
-                        &::before{
-                            content: "";
-                            height: 3px;
-                            width: 0%;
-                            background: rgb(146, 106, 57);
-                            position: absolute;
-                            left: 0;
-                            bottom: -8px;
-                            transition: 0.4s ease-out;
-
-                        &:hover{
-                            width: 100%;
-                        }
-
-                            a{
-                                font-size: 1.7rem;
-                            }
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        a{
+                            font-size: 2rem;
                         }
                     }
                 }
-            }
-
+            } 
         }
-
-    }
-
-    /*header */
-    .img_logo{
-        height: 14rem;
-        width: 14rem;
-        margin-left: 20rem;  
-    }
-    .img_logo_bolso{
-        margin-top: 4rem;
-        margin-right: 3rem;
-    }
-    .nav_ul li{
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
-    .nav_ul li::before{
-        content: "";
-        height: 3px;
-        width: 0%;
-        background: rgb(146, 106, 57);
-        position: absolute;
-        left: 0;
-        bottom: -8px;
-        transition: 0.4s ease-out;
-    }
-    .nav nav ul li a{
-    font-size: 1.7rem;
-    }
-    .nav_ul li:hover::before{
-        width: 100%;
     }
 }
+
+
 
 
 
@@ -186,6 +156,39 @@ main{
     }
 }
 
+/*media queries 768 */
+@media  screen and (min-width: 768px){
+    main{
+        #mediosPagos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "titulo"
+            "credito debito"
+            "efectivo tecto";
+
+            .titulo_informacion{
+                grid-area: titulo;
+            }
+            .credito{
+                grid-area: credito;
+            }
+            .debito{
+                grid-area: debito;
+            }
+            .efectivo{
+                grid-area: efectivo;
+            }
+            .texto__informacion{
+                grid-area: texto;
+            }
+        }
+    }
+}   
+
+/*media queries 1200 */
+//@media  screen and (min-width: 1200px){
 
 
 // article
