@@ -120,59 +120,6 @@ header div nav ul li a {
     width: 100%;
   }
 }
-main {
-  text-align: center;
-}
-main div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-main div section {
-  display: flex;
-  flex-direction: column;
-}
-main div section img {
-  height: 30rem;
-  width: 30rem;
-}
-main article {
-  background-color: rgb(233, 210, 170);
-  font-size: 1.2rem;
-}
-main article ul {
-  list-style: none;
-}
-
-/*media queries 768 */
-@media screen and (min-width: 768px) {
-  main div {
-    margin-left: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "portamacetas terminacion" "macetas cerca";
-  }
-  main .portaMacetas {
-    grid-area: portamacetas;
-  }
-  main .terminacion {
-    grid-area: terminacion;
-  }
-  main .macetas {
-    grid-area: macetas;
-  }
-  main .cerca {
-    grid-area: cerca;
-  }
-}
-/*media queries 1200 */
-@media screen and (min-width: 1200px) {
-  main div {
-    margin-left: 20rem;
-  }
-}
 article {
   background-color: rgb(223, 209, 191);
 }
