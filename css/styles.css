@@ -137,6 +137,13 @@ main div section img {
   height: 30rem;
   width: 30rem;
 }
+main article {
+  background-color: rgb(233, 210, 170);
+  font-size: 1.2rem;
+}
+main article ul {
+  list-style: none;
+}
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
@@ -145,19 +152,19 @@ main div section img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "basecruz trapecio" "conico tripode";
+    grid-template-areas: "portamacetas terminacion" "macetas cerca";
   }
-  main .baseCruz {
-    grid-area: basecruz;
+  main .portaMacetas {
+    grid-area: portamacetas;
   }
-  main .conico {
-    grid-area: conico;
+  main .terminacion {
+    grid-area: terminacion;
   }
-  main .trapecio {
-    grid-area: trapecio;
+  main .macetas {
+    grid-area: macetas;
   }
-  main .tripode {
-    grid-area: tripode;
+  main .cerca {
+    grid-area: cerca;
   }
 }
 /*media queries 1200 */
