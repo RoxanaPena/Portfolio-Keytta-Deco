@@ -120,8 +120,86 @@ header div nav ul li a {
     width: 100%;
   }
 }
+/* main de pag cocina */
+div {
+  margin-top: 1rem;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo" "card" "article";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div .cocina__titulo {
+  grid-area: titulo;
+  padding: 1rem;
+}
+div .cocina__card {
+  grid-area: card;
+}
+div .cocina__article {
+  grid-area: article;
+}
+
+.card {
+  width: 30rem;
+  height: 30rem;
+  margin: 1rem;
+  border-radius: 6px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+.card .card_contenido {
+  margin: 1rem;
+  color: rgb(146, 106, 57);
+  border: 1px solid rgb(146, 106, 57);
+  border-radius: 4px;
+  padding-top: 0.7rem;
+}
+.card .card_contenido:hover {
+  background: rgb(212, 181, 139);
+  color: #fff;
+}
+
+/*media queries 768 */
+@media screen and (min-width: 768px) {
+  div article {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+  }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "titulo article" "card article";
+  }
+  div .cocina__titulo {
+    text-align: center;
+  }
+  div .cocina__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10rem;
+  }
+  div .cocina__article {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15rem;
+  }
+}
 article {
   background-color: rgb(223, 209, 191);
+  padding-top: 1.5rem;
 }
 article section ul {
   padding: 0.5rem;
@@ -154,11 +232,11 @@ article div ul li a div {
 }
 
 .logo__fp--debito {
-  box-shadow: 0 0 0.9rem rgb(161, 91, 34);
+  box-shadow: 0 0 0.9rem rgb(25, 169, 209);
 }
 
 .logo__fp--credito {
-  box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+  box-shadow: 0 0 0.9rem rgb(161, 91, 34);
 }
 
 .logo__fp--efectivo {

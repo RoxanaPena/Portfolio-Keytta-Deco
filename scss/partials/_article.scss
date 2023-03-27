@@ -2,6 +2,7 @@
 
 article{
     background-color: rgb(223, 209, 191);
+    padding-top: 1.5rem;
 
     section{
         ul{
@@ -46,10 +47,10 @@ article{
     }
 }
 .logo__fp--debito{
-    box-shadow: 0 0 0.9rem rgb(161, 91, 34);
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
 }
 .logo__fp--credito{
-    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+    box-shadow: 0 0 0.9rem rgb(161, 91, 34);;
 }
 .logo__fp--efectivo{
     box-shadow: 0 0 0.9rem rgb(51, 228, 66);
