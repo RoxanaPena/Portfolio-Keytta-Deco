@@ -1,29 +1,386 @@
-#mainInformacion{
+// header
+.img_logo{
+    height: 10rem;
+    width: 10rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+.img_logo_bolso{
+    height: 5rem;
+    width: 5rem;
+    margin-top: 3rem;
+}
+header {
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        nav{
+            margin-top: -1.2rem;
+            margin-left: -1rem;
+            
+
+            ul{
+                font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                margin-top: 6rem;
+                margin-bottom: 1rem;
+
+
+                li{
+                    font-size: 0,2rem;
+                    list-style: none;
+                    margin: 0.5rem;
+                    
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        text-align: left;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+/*media queries 768 */
+@media screen and (min-width: 768px){
+
+    header{
+        div{
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+
+                    li{
+                        a{
+                            font-size: 1.5rem;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px){
+
+    header{
+        div{
+            nav{
+                ul{
+                    li{
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+
+                        &::before{
+                            content: "";
+                            height: 3px;
+                            width: 0%;
+                            background: rgb(146, 106, 57);
+                            position: absolute;
+                            left: 0;
+                            bottom: -8px;
+                            transition: 0.4s ease-out;
+
+                        &:hover{
+                            width: 100%;
+                        }
+
+                            a{
+                                font-size: 1.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    /*header */
+    .img_logo{
+        height: 14rem;
+        width: 14rem;
+        margin-left: 20rem;  
+    }
+    .img_logo_bolso{
+        margin-top: 4rem;
+        margin-right: 3rem;
+    }
+    .nav_ul li{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .nav_ul li::before{
+        content: "";
+        height: 3px;
+        width: 0%;
+        background: rgb(146, 106, 57);
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.4s ease-out;
+    }
+    .nav nav ul li a{
+    font-size: 1.7rem;
+    }
+    .nav_ul li:hover::before{
+        width: 100%;
+    }
+}
+
+
+
+//menu de informacion
+main{
     section{
         padding: 1rem;
         font-size: 1.3rem;
+
+        div{
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
     }
 
-    #formasDePago{
-        text-align: center;
+    .formasDePago{
+        margin: 1rem;
         background-color: #e9edc9;
+        box-shadow: 0 0 0.9rem #b4b89a;
+        text-align: center;
+        
     }
-    #cancelacion{
+    .cancelacion{
         background-color: #fefae0;
         text-align: left;
         padding: 1rem;
+        margin: 1rem;
+        box-shadow: 0 0 0.9rem #b7b4a3;
         
         div{
             padding: 1rem;
         }
     }
-    #leydecompra{
+    .leyDeCompra{
         background-color: #faedcd;
         text-align: center;
+        margin: 1rem;
+        box-shadow: 0 0 0.9rem #b6ab8d;
 
         div{
             li{
                 text-align: left;
+            }
+        }
+    }
+}
+
+
+
+// article
+/*vista mobile*/
+article{
+    background-color: rgb(232, 212, 187);
+    padding-top: 1.5rem;
+
+    section{
+        ul{
+            padding: 0.5rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 0.5rem;
+
+                div{
+                    a{
+                        display: none;
+                        text-decoration: none;
+
+                        div{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div{
+        ul{
+            padding: 1rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+
+                a{
+                    display: none;
+                    text-decoration: none;
+                        div{
+                            color: black;
+                        }
+                }
+            }
+        }
+    }
+}
+.logo__fp--debito{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+.logo__fp--credito{
+    box-shadow: 0 0 0.9rem rgb(161, 91, 34);;
+}
+.logo__fp--efectivo{
+    box-shadow: 0 0 0.9rem rgb(51, 228, 66);
+}
+.logo__fp--masfp{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+/*media queries 768*/
+@media screen and (min-width: 768px){
+
+    article{
+
+        section{
+            ul{
+                display: flex;
+                flex-direction: row;
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+@media screen and (min-width: 1200px){
+
+    article{
+        section{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        div{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    
+}
+
+
+// Footer
+.img_logo_wsp{
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 31rem;
+}
+footer{
+    background-color: rgb(215, 188, 154);
+    color: rgb(82, 60, 33);
+    font-size: 1.2rem;
+    padding:4em;
+    box-shadow: 0 0 1rem rgb(0 0 0);
+    
+    section{
+        margin-bottom: 2rem;
+    }
+
+    div{
+        
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            margin-right: 6rem;
+            
+            li{
+                list-style: none;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+/*media queries 768 */
+@media screen and (min-width: 768px){
+
+    .img_logo_wsp{
+        height: 5rem;
+        width: 5rem;
+        left: 68rem;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-evenly;
+
+        div{
+            ul{
+                li{
+                    margin: 1rem;
+                }
+
+            }
+        }
+    }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px){
+
+    .img_logo_wsp{
+        left: 138rem;
+    }
+    footer{
+        section{
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            ul{
+                li{
+                    margin: 2rem;
+                }
             }
         }
     }

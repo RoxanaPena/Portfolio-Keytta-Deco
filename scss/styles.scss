@@ -1,19 +1,13 @@
 @use './partials/reset';
-@use './partials/header';
 
 //agregar mixin y variables agregar estilos de aos etc
 //@use './partials/index';
-@use './partials/cocina';
-@use './partials/portamacetas';
+//@use './partials/cocina';
+//@use './partials/portamacetas';
 //@use './partials/percheros';
 //@use './partials/lamparas'; me falta
 //@use './partials/veladores';
 //@use './partials/contacto';  me falta
-//@use './partials/informacion';
+@use './partials/informacion';
 
-
-
-
-@use './partials/article';
-@use './partials/footer';
 
