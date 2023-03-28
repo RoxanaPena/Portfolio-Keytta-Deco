@@ -31,18 +31,19 @@ header {
                 }
             }
         }
-    }
-
-    .img_logo{
-        margin-top: -18rem;
-        height: 10rem;
-        width: 10rem;
-    }
-
-    .img_logo_bolso{
-        margin-top: -18rem;
-        height: 5rem;
-        width: 5rem;
+        .img_logo{
+            margin-top: -18rem;
+            margin-left: 1rem;
+            height: 10rem;
+            width: 10rem;
+        }
+    
+        .img_logo_bolso{
+            margin-top: -19rem;
+            margin-right: 1rem;
+            height: 5rem;
+            width: 5rem;
+        }
     }
 }
 /*media queries 768 */
@@ -64,12 +65,12 @@ header {
         }
 
         .img_logo{
-            margin-top: 1rem;
-            height: 10rem;
-            width: 10rem;
+            margin-top: 40rem;
+            margin-left: 1rem;
+            height: 30rem;
+            width: 30rem;
         }
         .img_logo_bolso{
-            margin-top: 1rem;
             height: 5rem;
             width: 5rem;
             margin-right: 1rem;
@@ -116,24 +117,25 @@ header {
 
 //menu de informacion
 main{
-    section{
+    font-size: 1.4rem;
+    .pagos{
+        background-color: #e9edc9;
+        text-align: left;
         padding: 1rem;
-        font-size: 1.3rem;
-
+        margin: 1rem;
+        box-shadow: 0 0 0.9rem #b7b4a3;
+        
         div{
+            padding: 1rem;
+        }
+        .efectivo{
             img{
-                height: 100%;
-                width: 100%;
+                margin-bottom: 1rem;
+                height: 10rem;
+                width: 14rem;
+                box-shadow: 0 0 0.9rem  #717d17;
             }
         }
-    }
-
-    .formasDePago{
-        margin: 1rem;
-        background-color: #e9edc9;
-        box-shadow: 0 0 0.9rem #b4b89a;
-        text-align: center;
-        
     }
     .cancelacion{
         background-color: #fefae0;
@@ -159,49 +161,21 @@ main{
         }
     }
 }
-
-/*media queries 768 */
-@media  screen and (min-width: 768px){
-    main{
-        #mediosPagos{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas: 
-            "titulo"
-            "credito debito"
-            "efectivo tecto";
-
-            .titulo_informacion{
-                grid-area: titulo;
-            }
-            .credito{
-                grid-area: credito;
-            }
-            .debito{
-                grid-area: debito;
-            }
-            .efectivo{
-                grid-area: efectivo;
-            }
-            .texto__informacion{
-                grid-area: texto;
-            }
-        }
-    }
-}   
-
-/*media queries 1200 */
-//@media  screen and (min-width: 1200px){
+//media queries 768
 
 
-    
+//media queries 1200 
+
+
+
+
+
 // Footer 380
 footer{
     margin-top: 1rem;
     font-size: 1.2rem;
     color: rgb(84, 52, 7);
-    background-color: rgb(204, 158, 92);
+    background-color: #d4a373;
     box-shadow: 0 0 1rem  rgb(116, 79, 27);
     padding: 1.5rem;
     display: flex;
