@@ -214,15 +214,14 @@ div{
 
 
 // article
-/*vista mobile*/
+/*vista mobile 380*/
 article{
     background-color: rgb(232, 212, 187);
     padding-top: 1.5rem;
 
     section{
         ul{
-            padding: 0.5rem;
-
+            display: flex;
             li{
                 list-style: none;
                 text-align: center;
@@ -241,7 +240,11 @@ article{
             }
         }
     }
-
+    section{
+        img{
+            box-shadow: 0 0 1rem rgb(103, 86, 42);
+        }
+    }
     div{
         ul{
             padding: 1rem;
@@ -278,8 +281,7 @@ article{
     article{
         section{
             ul{
-                display: flex;
-                flex-direction: row;
+                justify-content: space-evenly;
 
                 li{
                     display: flex;
@@ -291,12 +293,12 @@ article{
 
                         a{
                             display: block;
+                            color: black;
                         }
                     }
                 }
             }
         }
-
         div{
             display: flex;
             justify-content: center;
@@ -304,6 +306,7 @@ article{
                 li{
                     display: flex;
                     flex-direction: column;
+                    padding: 1rem;
                     a{
                         display: block;
                         }
@@ -315,16 +318,10 @@ article{
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px){
     article{
-        section{
-            ul{
-                display: flex;
-                justify-content: space-around;
-            }
-        }
         div{
             ul{
                 display: flex;
-                justify-content: space-around;
+                margin: 1rem;
             }
         }
     }
@@ -332,6 +329,7 @@ article{
 }
 
 
+    
 // Footer 380
 footer{
     margin-top: 1rem;
@@ -388,12 +386,16 @@ footer{
     footer{
         flex-direction: row;
         section{
+            align-items: center;
+            justify-content: center;
             margin-right: 15rem;
             h4{
-                margin-bottom: 1.5rem;
+                margin-bottom: 1.3rem;
             }
         }
         div{
+            align-items: center;
+            justify-content: center;
             ul{
                 li{
                     a{
@@ -412,4 +414,3 @@ footer{
         }   
     }
 }
-

@@ -180,13 +180,13 @@ div .cocina__article {
     margin-right: 15rem;
   }
 }
-/*vista mobile*/
+/*vista mobile 380*/
 article {
   background-color: rgb(232, 212, 187);
   padding-top: 1.5rem;
 }
 article section ul {
-  padding: 0.5rem;
+  display: flex;
 }
 article section ul li {
   list-style: none;
@@ -199,6 +199,9 @@ article section ul li div a {
 }
 article section ul li div a div {
   color: black;
+}
+article section img {
+  box-shadow: 0 0 1rem rgb(103, 86, 42);
 }
 article div ul {
   padding: 1rem;
@@ -234,8 +237,7 @@ article div ul li a div {
 /*media queries 768*/
 @media screen and (min-width: 768px) {
   article section ul {
-    display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
   }
   article section ul li {
     display: flex;
@@ -247,6 +249,7 @@ article div ul li a div {
   }
   article section ul li div a {
     display: block;
+    color: black;
   }
   article div {
     display: flex;
@@ -255,6 +258,7 @@ article div ul li a div {
   article div ul li {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
   }
   article div ul li a {
     display: block;
@@ -262,13 +266,9 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article section ul {
-    display: flex;
-    justify-content: space-around;
-  }
   article div ul {
     display: flex;
-    justify-content: space-around;
+    margin: 1rem;
   }
 }
 footer {
@@ -322,10 +322,16 @@ footer .img_logo_wsp {
     flex-direction: row;
   }
   footer section {
+    align-items: center;
+    justify-content: center;
     margin-right: 15rem;
   }
   footer section h4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
+  }
+  footer div {
+    align-items: center;
+    justify-content: center;
   }
   footer div ul li a img {
     margin-top: 0.6rem;
