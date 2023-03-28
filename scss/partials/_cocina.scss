@@ -1,4 +1,5 @@
 // header
+//vista mobile 380
 header {
     div{
         display: flex;
@@ -13,6 +14,7 @@ header {
                 font-size: 1.8rem;
                 display: flex;
                 flex-direction: column;
+                align-items: start;
                 margin-top: 6rem;
                 margin-bottom: 1rem;
 
@@ -32,27 +34,19 @@ header {
     }
 
     .img_logo{
+        margin-top: -18rem;
         height: 10rem;
         width: 10rem;
-        margin-top: 1rem;
-        margin-left: 2rem;
     }
 
     .img_logo_bolso{
+        margin-top: -18rem;
         height: 5rem;
         width: 5rem;
-        margin-top: 3rem;
     }
 }
 /*media queries 768 */
 @media screen and (min-width: 768px){
-    .img_logo_bolso{
-        height: 5rem;
-        width: 5rem;
-        margin-top: 3.4rem;
-        margin-right: 1rem;
-    }
-
     header{
         div{
             nav{
@@ -68,25 +62,26 @@ header {
                 } 
             }
         }
+
+        .img_logo{
+            margin-top: 1rem;
+            height: 10rem;
+            width: 10rem;
+        }
+        .img_logo_bolso{
+            margin-top: 1rem;
+            height: 5rem;
+            width: 5rem;
+            margin-right: 1rem;
+        }
     }
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
-    .img_logo{
-        height: 18rem;
-        width: 18rem;
-        margin-left: 5rem;  
-    }
-    .img_logo_bolso{
-        height: 10rem;
-        width: 10rem;
-        margin-top: 4.1rem;
-        margin-right: 5rem;
-    }
     header{
         div{
             nav{
-                margin-top: 3.9rem;
+                margin-top: 1rem;
 
                 ul{
                     li{
@@ -99,6 +94,18 @@ header {
                     }
                 }
             } 
+        }
+
+        .img_logo{
+            margin-top: 1rem;
+            height: 20rem;
+            width: 20rem;
+        }
+        .img_logo_bolso{
+            margin-top: 1rem;
+            height: 8rem;
+            width: 8rem;
+            margin-right: 8rem;
         }
     }
 }
@@ -203,6 +210,125 @@ div{
             margin-right: 15rem;
         }
     }
+}
+
+
+// article
+/*vista mobile*/
+article{
+    background-color: rgb(232, 212, 187);
+    padding-top: 1.5rem;
+
+    section{
+        ul{
+            padding: 0.5rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 0.5rem;
+
+                div{
+                    a{
+                        display: none;
+                        text-decoration: none;
+
+                        div{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div{
+        ul{
+            padding: 1rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+
+                a{
+                    display: none;
+                    text-decoration: none;
+                        div{
+                            color: black;
+                        }
+                }
+            }
+        }
+    }
+}
+.logo__fp--debito{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+.logo__fp--credito{
+    box-shadow: 0 0 0.9rem rgb(161, 91, 34);;
+}
+.logo__fp--efectivo{
+    box-shadow: 0 0 0.9rem rgb(51, 228, 66);
+}
+.logo__fp--masfp{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+/*media queries 768*/
+@media screen and (min-width: 768px){
+    article{
+        section{
+            ul{
+                display: flex;
+                flex-direction: row;
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*media queris vista desktop*/
+@media screen and (min-width: 1200px){
+    article{
+        section{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        div{
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    
 }
 
 
