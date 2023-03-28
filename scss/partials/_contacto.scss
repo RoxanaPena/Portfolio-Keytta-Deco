@@ -1,3 +1,110 @@
+// header
+header {
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        nav{
+            margin-top: -1.2rem;
+            margin-left: -1rem;
+
+            ul{
+                font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+                margin-top: 6rem;
+                margin-bottom: 1rem;
+
+                li{
+                    font-size: 0,2rem;
+                    list-style: none;
+                    margin: 0.5rem;
+                    
+                    a{
+                        text-decoration: none;
+                        color: black;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .img_logo{
+        height: 10rem;
+        width: 10rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .img_logo_bolso{
+        height: 5rem;
+        width: 5rem;
+        margin-top: 3rem;
+    }
+}
+/*media queries 768 */
+@media screen and (min-width: 768px){
+    .img_logo_bolso{
+        height: 5rem;
+        width: 5rem;
+        margin-top: 3.4rem;
+        margin-right: 1rem;
+    }
+
+    header{
+        div{
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+
+                    li{
+                        a{
+                            font-size: 1.6rem;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+/* madia queries 1200 desktop */
+@media screen and (min-width: 1200px){
+    .img_logo{
+        height: 18rem;
+        width: 18rem;
+        margin-left: 5rem;  
+    }
+    .img_logo_bolso{
+        height: 10rem;
+        width: 10rem;
+        margin-top: 4.1rem;
+        margin-right: 5rem;
+    }
+    header{
+        div{
+            nav{
+                margin-top: 3.9rem;
+
+                ul{
+                    li{
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+
+                        a{
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+
 
 // Footer 380
 footer{
