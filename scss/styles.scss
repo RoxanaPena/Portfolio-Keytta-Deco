@@ -2,12 +2,16 @@
 
 //agregar mixin y variables agregar estilos de aos etc
 //@use './partials/index';
-@use './partials/cocina';
+
+//pages
+//@use './partials/cocina';
 //@use './partials/portamacetas';
 //@use './partials/percheros';
 //@use './partials/lamparas'; me falta
 //@use './partials/veladores';
-//@use './partials/contacto';  me falta
+
+//contacto/informacion 
+@use './partials/contacto';
 @use './partials/informacion';
 
 
