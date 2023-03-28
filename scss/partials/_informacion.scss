@@ -308,28 +308,32 @@ article{
 }
 
 
-// Footer
+// Footer 380
 footer{
-    background-color: rgb(225, 212, 196);
-    color: rgb(92, 60, 15);
+    margin-top: 1rem;
     font-size: 1.2rem;
-    box-shadow: 0 0 1rem  rgb(92, 60, 15);
+    color: rgb(84, 52, 7);
+    background-color: rgb(204, 158, 92);
+    box-shadow: 0 0 1rem  rgb(116, 79, 27);
     padding: 1.5rem;
-
+    display: flex;
+    flex-direction: column;
+    
+    section{
+        margin: 1rem;
+    }
     div{
-        margin-top: 3rem;
-        margin-right: 2rem;
         ul{
-            display: flex;
-            justify-content:space-evenly;
-            margin-right: 6rem;            
+            display: flex;            
             li{
                 list-style: none;
-                margin-bottom: 2rem;
+
+                p{
+                    margin-left: 1rem;
+                }
             }
         }
     }
-
     .img_logo_wsp{
         height: 4rem;
         width: 4rem;
@@ -340,45 +344,47 @@ footer{
 }
 /*media queries 768 */
 @media screen and (min-width: 768px){
-
-    .img_logo_wsp{
-        height: 5rem;
-        width: 5rem;
-        left: 68rem;
-    }
-
     footer{
-        display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
 
         div{
-            ul{
-                li{
-                    margin: 1rem;
-                }
+            margin-top: 0.5rem;
+        }
 
-            }
+        .img_logo_wsp{
+            height: 5rem;
+            width: 5rem;
+            margin-left: 36rem;
         }
     }
-    
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
-
-    .img_logo_wsp{
-        left: 138rem;
-    }
     footer{
+        flex-direction: row;
         section{
-            display: flex;
-            flex-direction: column;
+            margin-right: 15rem;
+            h4{
+                margin-bottom: 1.5rem;
+            }
         }
         div{
             ul{
                 li{
-                    margin: 2rem;
+                    a{
+                        img{
+                            margin-top: 0.6rem;
+                        }
+                    }
                 }
             }
         }
+        .img_logo_wsp{
+            height: 6rem;
+            width: 6rem;
+            bottom: 1rem;
+            left: 102rem;
+        }   
     }
 }
