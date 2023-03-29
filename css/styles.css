@@ -48,59 +48,41 @@ header div nav ul li a {
   text-align: left;
 }
 header .img_logo {
-  margin-top: -18rem;
   height: 10rem;
   width: 10rem;
 }
 header .img_logo_bolso {
-  margin-top: -18rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div nav ul {
-    display: flex;
-    flex-direction: row;
+  header div a {
+    margin-top: 13rem;
   }
-  header div nav ul li a {
-    font-size: 1.6rem;
-  }
-  header .img_logo {
-    margin-top: 1rem;
+  header div a .img_logo {
     height: 10rem;
     width: 10rem;
   }
-  header .img_logo_bolso {
-    margin-top: 1rem;
-    height: 5rem;
-    width: 5rem;
-    margin-right: 1rem;
+  header div div {
+    margin-top: 21rem;
   }
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  header div nav {
-    margin-top: 1rem;
+  header div a {
+    margin-top: 15rem;
+    margin-left: 6rem;
   }
-  header div nav ul li {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  header div a .img_logo {
+    height: 15rem;
+    width: 15rem;
   }
-  header div nav ul li a {
-    font-size: 2rem;
-  }
-  header .img_logo {
-    margin-top: 1rem;
-    height: 20rem;
-    width: 20rem;
-  }
-  header .img_logo_bolso {
-    margin-top: 1rem;
-    height: 8rem;
-    width: 8rem;
-    margin-right: 8rem;
+  header div div .img_logo_bolso {
+    margin-right: 5rem;
+    height: 10rem;
+    width: 10rem;
   }
 }
 /* main de pag cocina */
@@ -306,9 +288,6 @@ footer .img_logo_wsp {
   footer {
     justify-content: center;
     align-items: center;
-  }
-  footer div {
-    margin-top: 0.5rem;
   }
   footer .img_logo_wsp {
     height: 5rem;
@@ -662,45 +641,50 @@ header div .img_logo_bolso {
     margin-right: 8rem;
   }
 }
+/*media queries 380 */
 main {
   font-size: 1.4rem;
 }
-main .pagos {
+main div .pagos {
   background-color: #e9edc9;
   text-align: left;
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 0 0.9rem #b7b4a3;
 }
-main .pagos div {
-  padding: 1rem;
+main div .pagos .credito img {
+  box-shadow: 0 0 0.9rem #b6ab8d;
+  margin-bottom: 1rem;
 }
-main .pagos .efectivo img {
+main div .pagos .efectivo img {
   margin-bottom: 1rem;
   height: 10rem;
   width: 14rem;
-  box-shadow: 0 0 0.9rem #717d17;
+  box-shadow: 0 0 0.9rem #b6ab8d;
 }
-main .cancelacion {
+main div .cancelacion {
   background-color: #fefae0;
   text-align: left;
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 0 0.9rem #b7b4a3;
 }
-main .cancelacion div {
+main div .cancelacion div {
   padding: 1rem;
 }
-main .leyDeCompra {
+main div .leyDeCompra {
   background-color: #faedcd;
   text-align: center;
   margin: 1rem;
   box-shadow: 0 0 0.9rem #b6ab8d;
 }
-main .leyDeCompra div li {
+main div .leyDeCompra div li {
   text-align: left;
 }
 
+/*media queries 768 */
+/*media queries 1200 */
+/*media queries 380 */
 footer {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -736,14 +720,15 @@ footer .img_logo_wsp {
   footer {
     justify-content: center;
     align-items: center;
+    margin-left: -10rem;
   }
   footer div {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
   footer .img_logo_wsp {
     height: 5rem;
     width: 5rem;
-    margin-left: 36rem;
+    margin-left: 35rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -767,7 +752,6 @@ footer .img_logo_wsp {
     left: 102rem;
   }
 }
-/*falta dar estilo*/
 /*falta dar estilo*/
 /*falta dar estilo*/
 

@@ -116,61 +116,71 @@ header {
 
 
 //menu de informacion
+/*media queries 380 */
 main{
     font-size: 1.4rem;
-    .pagos{
-        background-color: #e9edc9;
-        text-align: left;
-        padding: 1rem;
-        margin: 1rem;
-        box-shadow: 0 0 0.9rem #b7b4a3;
-        
-        div{
+    div{
+        .pagos{
+            background-color: #e9edc9;
+            text-align: left;
             padding: 1rem;
-        }
-        .efectivo{
-            img{
-                margin-bottom: 1rem;
-                height: 10rem;
-                width: 14rem;
-                box-shadow: 0 0 0.9rem  #717d17;
-            }
-        }
-    }
-    .cancelacion{
-        background-color: #fefae0;
-        text-align: left;
-        padding: 1rem;
-        margin: 1rem;
-        box-shadow: 0 0 0.9rem #b7b4a3;
-        
-        div{
-            padding: 1rem;
-        }
-    }
-    .leyDeCompra{
-        background-color: #faedcd;
-        text-align: center;
-        margin: 1rem;
-        box-shadow: 0 0 0.9rem #b6ab8d;
+            margin: 1rem;
+            box-shadow: 0 0 0.9rem #b7b4a3;
 
-        div{
-            li{
-                text-align: left;
+            .credito{
+                img{
+                    box-shadow: 0 0 0.9rem #b6ab8d;
+                    margin-bottom: 1rem;
+                }
+            }
+            .efectivo{
+                img{
+                    margin-bottom: 1rem;
+                    height: 10rem;
+                    width: 14rem;
+                    box-shadow: 0 0 0.9rem #b6ab8d;
+                }
+            }
+        }
+        .cancelacion{
+            background-color: #fefae0;
+            text-align: left;
+            padding: 1rem;
+            margin: 1rem;
+            box-shadow: 0 0 0.9rem #b7b4a3;
+            
+            div{
+                padding: 1rem;
+            }
+        }
+        .leyDeCompra{
+            background-color: #faedcd;
+            text-align: center;
+            margin: 1rem;
+            box-shadow: 0 0 0.9rem #b6ab8d;
+    
+            div{
+                li{
+                    text-align: left;
+                }
             }
         }
     }
+    
 }
-//media queries 768
+/*media queries 768 */
+@media screen and (min-width: 768px){
+
+}
+
+/*media queries 1200 */
 
 
-//media queries 1200 
 
 
 
-
-
-// Footer 380
+// Footer
+/*media queries 380 */
 footer{
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -209,15 +219,16 @@ footer{
     footer{
         justify-content: center;
         align-items: center;
+        margin-left: -10rem;
 
         div{
-            margin-top: 0.5rem;
+            margin-top: 1rem;
         }
 
         .img_logo_wsp{
             height: 5rem;
             width: 5rem;
-            margin-left: 36rem;
+            margin-left: 35rem;
         }
     }
 }
