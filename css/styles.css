@@ -248,9 +248,9 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul {
-    display: flex;
-    margin: 1rem;
+  article div ul li {
+    margin-left: 10rem;
+    margin-right: 10rem;
   }
 }
 footer {
@@ -297,23 +297,12 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer {
-    flex-direction: row;
-  }
-  footer section {
-    margin-right: 15rem;
-  }
-  footer section h4 {
-    margin-bottom: 1.5rem;
-  }
-  footer div ul li a img {
-    margin-top: 0.6rem;
+  footer div ul {
+    margin-bottom: -3rem;
   }
   footer .img_logo_wsp {
-    height: 6rem;
-    width: 6rem;
-    bottom: 1rem;
-    left: 102rem;
+    margin-left: 25rem;
+    margin-bottom: 2rem;
   }
 }
 header div {

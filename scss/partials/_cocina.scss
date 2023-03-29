@@ -296,12 +296,13 @@ article{
     article{
         div{
             ul{
-                display: flex;
-                margin: 1rem;
+                li{
+                    margin-left: 10rem;
+                    margin-right: 10rem;
+                }
             }
         }
     }
-    
 }
 
 
@@ -356,31 +357,14 @@ footer{
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
     footer{
-        flex-direction: row;
-        section{
-            margin-right: 15rem;
-            h4{
-                margin-bottom: 1.5rem;
-            }
-        }
         div{
             ul{
-                li{
-                    a{
-                        img{
-                            margin-top: 0.6rem;
-                        }
-                    }
-
-                    
-                }
+                margin-bottom: -3rem;
             }
         }
         .img_logo_wsp{
-            height: 6rem;
-            width: 6rem;
-            bottom: 1rem;
-            left: 102rem;
-        }   
+            margin-left: 25rem;
+            margin-bottom: 2rem;
+        }
     }
 }
