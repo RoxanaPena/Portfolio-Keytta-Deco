@@ -37,7 +37,6 @@ header {
         height: 10rem;
         width: 10rem;
     }
-
     .img_logo_bolso{
         height: 5rem;
         width: 5rem;
@@ -74,11 +73,21 @@ header {
                     width: 15rem;
                 }
             }
+            nav{
+                ul{
+                    li{
+                        a{
+                            margin-left: 1.5rem;
+                        }
+                    }
+                }
+            }
             div{
                 .img_logo_bolso{
+                    margin-top: -17rem;
                     margin-right: 5rem;
-                    height: 10rem;
-                    width: 10rem;
+                    height: 6rem;
+                    width: 6rem;
                 }
             }
         }

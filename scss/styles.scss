@@ -1,16 +1,16 @@
 @use './partials/reset';
 
 //agregar mixin y variables agregar estilos de aos etc
-//@use './partials/index';
+@use './partials/index';
 
 //pages
-@use './partials/cocina';
-//@use './partials/portamacetas';  /*falta dar estilo*/
-//@use './partials/percheros';  /*falta dar estilo*/
-//@use './partials/lamparas';  /*falta dar estilo*/
-//@use './partials/veladores'; /*falta dar estilo*/
+@use './partials/cocina'; /*falta dar estilo*/
+@use './partials/portamacetas';  /*falta dar estilo*/
+@use './partials/percheros';  /*falta dar estilo*/
+@use './partials/lamparas';  /*falta dar estilo*/
+@use './partials/veladores'; /*falta dar estilo*/
 
-//contacto/informacion 
+//contact/information
 @use './partials/contacto'; /*falta dar estilo*/
 @use './partials/informacion';  /*falta dar estilo*/
 

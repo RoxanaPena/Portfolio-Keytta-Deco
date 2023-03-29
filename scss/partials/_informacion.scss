@@ -31,49 +31,32 @@ header {
                 }
             }
         }
-        .img_logo{
-            margin-top: -18rem;
-            margin-left: 1rem;
-            height: 10rem;
-            width: 10rem;
-        }
-    
-        .img_logo_bolso{
-            margin-top: -19rem;
-            margin-right: 1rem;
-            height: 5rem;
-            width: 5rem;
-        }
+    }
+
+    .img_logo{
+        height: 10rem;
+        width: 10rem;
+    }
+    .img_logo_bolso{
+        height: 5rem;
+        width: 5rem;
     }
 }
 /*media queries 768 */
 @media screen and (min-width: 768px){
     header{
         div{
-            nav{
-                ul{
-                    display: flex;
-                    flex-direction: row;
+            a{
+                margin-top: 13rem;
 
-                    li{
-                        a{
-                            font-size: 1.6rem;
-                        }
-                    }
-                } 
+                .img_logo{
+                    height: 10rem;
+                    width: 10rem;
+                }
             }
-        }
-
-        .img_logo{
-            margin-top: 40rem;
-            margin-left: 1rem;
-            height: 30rem;
-            width: 30rem;
-        }
-        .img_logo_bolso{
-            height: 5rem;
-            width: 5rem;
-            margin-right: 1rem;
+            div{
+                margin-top: 21rem;
+            }
         }
     }
 }
@@ -81,32 +64,32 @@ header {
 @media screen and (min-width: 1200px){
     header{
         div{
-            nav{
-                margin-top: 1rem;
+            a{
+                margin-top: 15rem;
+                margin-left: 6rem;
 
+                .img_logo{
+                    height: 15rem;
+                    width: 15rem;
+                }
+            }
+            nav{
                 ul{
                     li{
-                        margin-left: 1rem;
-                        margin-right: 1rem;
-
                         a{
-                            font-size: 2rem;
+                            margin-left: 1.5rem;
                         }
                     }
                 }
-            } 
-        }
-
-        .img_logo{
-            margin-top: 1rem;
-            height: 20rem;
-            width: 20rem;
-        }
-        .img_logo_bolso{
-            margin-top: 1rem;
-            height: 8rem;
-            width: 8rem;
-            margin-right: 8rem;
+            }
+            div{
+                .img_logo_bolso{
+                    margin-top: -17rem;
+                    margin-right: 5rem;
+                    height: 6rem;
+                    width: 6rem;
+                }
+            }
         }
     }
 }
@@ -178,14 +161,12 @@ main{
 
 
 
-
-// Footer
-/*media queries 380 */
+// Footer 380
 footer{
     margin-top: 1rem;
     font-size: 1.2rem;
     color: rgb(84, 52, 7);
-    background-color: #d4a373;
+    background-color: rgb(204, 158, 92);
     box-shadow: 0 0 1rem  rgb(116, 79, 27);
     padding: 1.5rem;
     display: flex;
@@ -219,45 +200,25 @@ footer{
     footer{
         justify-content: center;
         align-items: center;
-        margin-left: -10rem;
-
-        div{
-            margin-top: 1rem;
-        }
 
         .img_logo_wsp{
             height: 5rem;
             width: 5rem;
-            margin-left: 35rem;
+            margin-left: 36rem;
         }
     }
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
     footer{
-        flex-direction: row;
-        section{
-            margin-right: 15rem;
-            h4{
-                margin-bottom: 1.5rem;
-            }
-        }
         div{
             ul{
-                li{
-                    a{
-                        img{
-                            margin-top: 0.6rem;
-                        }
-                    }
-                }
+                margin-bottom: -3rem;
             }
         }
         .img_logo_wsp{
-            height: 6rem;
-            width: 6rem;
-            bottom: 1rem;
-            left: 102rem;
-        }   
+            margin-left: 25rem;
+            margin-bottom: 2rem;
+        }
     }
 }

@@ -1,4 +1,5 @@
 // header
+//vista mobile 380
 header {
     div{
         display: flex;
@@ -13,6 +14,7 @@ header {
                 font-size: 1.8rem;
                 display: flex;
                 flex-direction: column;
+                align-items: start;
                 margin-top: 6rem;
                 margin-bottom: 1rem;
 
@@ -34,71 +36,60 @@ header {
     .img_logo{
         height: 10rem;
         width: 10rem;
-        margin-top: 1rem;
-        margin-left: 2rem;
     }
-
     .img_logo_bolso{
         height: 5rem;
         width: 5rem;
-        margin-top: 3rem;
     }
 }
 /*media queries 768 */
 @media screen and (min-width: 768px){
-    .img_logo_bolso{
-        height: 5rem;
-        width: 5rem;
-        margin-top: 3.4rem;
-        margin-right: 1rem;
-    }
-
     header{
         div{
-            nav{
-                ul{
-                    display: flex;
-                    flex-direction: row;
+            a{
+                margin-top: 13rem;
 
-                    li{
-                        a{
-                            font-size: 1.6rem;
-                        }
-                    }
-                } 
+                .img_logo{
+                    height: 10rem;
+                    width: 10rem;
+                }
+            }
+            div{
+                margin-top: 21rem;
             }
         }
     }
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
-    .img_logo{
-        height: 18rem;
-        width: 18rem;
-        margin-left: 5rem;  
-    }
-    .img_logo_bolso{
-        height: 10rem;
-        width: 10rem;
-        margin-top: 4.1rem;
-        margin-right: 5rem;
-    }
     header{
         div{
-            nav{
-                margin-top: 3.9rem;
+            a{
+                margin-top: 15rem;
+                margin-left: 6rem;
 
+                .img_logo{
+                    height: 15rem;
+                    width: 15rem;
+                }
+            }
+            nav{
                 ul{
                     li{
-                        margin-left: 1rem;
-                        margin-right: 1rem;
-
                         a{
-                            font-size: 2rem;
+                            margin-left: 1.5rem;
                         }
                     }
                 }
-            } 
+            }
+            div{
+                .img_logo_bolso{
+                    margin-top: -17rem;
+                    margin-right: 5rem;
+                    height: 6rem;
+                    width: 6rem;
+                }
+            }
         }
     }
 }
@@ -138,6 +129,123 @@ main{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+        }
+    }
+}
+
+
+// article
+/*vista mobile 380*/
+article{
+    background-color: rgb(232, 212, 187);
+    padding-top: 1.5rem;
+
+    section{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                text-align: center;
+                padding: 0.5rem;
+
+                div{
+                    a{
+                        display: none;
+                        text-decoration: none;
+
+                        div{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section{
+        img{
+            box-shadow: 0 0 1rem rgb(103, 86, 42);
+        }
+    }
+    div{
+        ul{
+            padding: 1rem;
+
+            li{
+                list-style: none;
+                text-align: center;
+
+                a{
+                    display: none;
+                    text-decoration: none;
+                        div{
+                            color: black;
+                        }
+                }
+            }
+        }
+    }
+}
+.logo__fp--debito{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+.logo__fp--credito{
+    box-shadow: 0 0 0.9rem rgb(161, 91, 34);;
+}
+.logo__fp--efectivo{
+    box-shadow: 0 0 0.9rem rgb(51, 228, 66);
+}
+.logo__fp--masfp{
+    box-shadow: 0 0 0.9rem rgb(25, 169, 209);
+}
+/*media queries 768*/
+@media screen and (min-width: 768px){
+    article{
+        section{
+            ul{
+                justify-content: space-evenly;
+
+                li{
+                    display: flex;
+                    flex-direction: column;
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+
+                        a{
+                            display: block;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    a{
+                        display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*media queris vista desktop*/
+@media screen and (min-width: 1200px){
+    article{
+        div{
+            ul{
+                li{
+                    margin-left: 10rem;
+                    margin-right: 10rem;
+                }
+            }
         }
     }
 }
@@ -184,10 +292,6 @@ footer{
         justify-content: center;
         align-items: center;
 
-        div{
-            margin-top: 0.5rem;
-        }
-
         .img_logo_wsp{
             height: 5rem;
             width: 5rem;
@@ -198,29 +302,14 @@ footer{
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
     footer{
-        flex-direction: row;
-        section{
-            margin-right: 15rem;
-            h4{
-                margin-bottom: 1.5rem;
-            }
-        }
         div{
             ul{
-                li{
-                    a{
-                        img{
-                            margin-top: 0.6rem;
-                        }
-                    }
-                }
+                margin-bottom: -3rem;
             }
         }
         .img_logo_wsp{
-            height: 6rem;
-            width: 6rem;
-            bottom: 1rem;
-            left: 102rem;
-        }   
+            margin-left: 25rem;
+            margin-bottom: 2rem;
+        }
     }
 }
