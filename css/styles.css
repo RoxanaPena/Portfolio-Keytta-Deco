@@ -23,7 +23,13 @@ html {
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -34,7 +40,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -47,26 +53,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -79,51 +92,16 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
-  }
-}
-main {
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "titulo" "texto1" "carrusel" "texto2";
-}
-main .main__titulo {
-  grid-area: titulo;
-}
-main .main__tuno {
-  grid-area: texto1;
-}
-main .main__tdos {
-  grid-area: texto2;
-}
-main .carousel {
-  grid-area: carrusel;
-  height: 40rem;
-}
-
-/*media queries 768 */
-@media screen and (min-width: 768px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "carrusel titulo" "carrusel texto1" "carrusel texto2";
-    margin: 1rem;
-  }
-}
-/*media queries 1200 */
-@media screen and (min-width: 1200px) {
-  main {
-    font-size: 1.5rem;
   }
 }
 /*vista mobile 380*/
@@ -212,9 +190,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -239,7 +216,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -253,7 +230,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -261,18 +238,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -283,7 +289,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -296,26 +302,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -328,11 +341,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -501,9 +516,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -528,7 +542,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -542,7 +556,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -550,18 +564,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -572,7 +615,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -585,26 +628,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -617,11 +667,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -758,9 +810,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -785,7 +836,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -799,7 +850,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -807,18 +858,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -829,7 +909,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -842,26 +922,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -874,11 +961,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -995,9 +1084,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -1022,7 +1110,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -1036,7 +1124,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -1044,18 +1132,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -1066,7 +1183,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -1079,26 +1196,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -1111,11 +1235,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -1207,9 +1333,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -1234,7 +1359,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -1248,7 +1373,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -1256,18 +1381,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -1278,7 +1432,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -1291,26 +1445,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -1323,11 +1484,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -1465,9 +1628,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -1492,7 +1654,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -1506,7 +1668,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -1514,18 +1676,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -1536,7 +1727,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -1549,26 +1740,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -1581,11 +1779,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -1677,9 +1877,8 @@ article div ul li a div {
 }
 /*media queris vista desktop*/
 @media screen and (min-width: 1200px) {
-  article div ul li {
-    margin-left: 10rem;
-    margin-right: 10rem;
+  article div ul {
+    display: flex;
   }
 }
 footer {
@@ -1704,7 +1903,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -1718,7 +1917,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -1726,18 +1925,47 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 header div {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+header div a .img_logo {
+  margin-top: -12rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 10rem;
 }
 header div nav {
   margin-top: -1.2rem;
@@ -1748,7 +1976,7 @@ header div nav ul {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin-top: 6rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 header div nav ul li {
@@ -1761,26 +1989,33 @@ header div nav ul li a {
   color: black;
   text-align: left;
 }
-header .img_logo {
-  height: 10rem;
-  width: 10rem;
-}
-header .img_logo_bolso {
+header div div .img_logo_bolso {
+  margin-top: -15rem;
+  margin-right: 1rem;
   height: 5rem;
   width: 5rem;
 }
 
 /*media queries 768 */
 @media screen and (min-width: 768px) {
-  header div a {
-    margin-top: 13rem;
-  }
   header div a .img_logo {
-    height: 10rem;
-    width: 10rem;
+    margin-top: -30rem;
+    margin-left: 2rem;
+    height: 13rem;
+    width: 13rem;
   }
-  header div div {
-    margin-top: 21rem;
+  header div nav ul {
+    font-size: 1.8rem;
+  }
+  header div nav ul li {
+    display: flexbox;
+    flex-direction: row;
+  }
+  header div div .img_logo_bolso {
+    margin-top: -35rem;
+    margin-right: 3rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 /* madia queries 1200 desktop */
@@ -1793,11 +2028,13 @@ header .img_logo_bolso {
     height: 15rem;
     width: 15rem;
   }
+  header div nav ul li {
+    flex-direction: row;
+  }
   header div nav ul li a {
     margin-left: 1.5rem;
   }
   header div div .img_logo_bolso {
-    margin-top: -17rem;
     margin-right: 5rem;
     height: 6rem;
     width: 6rem;
@@ -1868,7 +2105,7 @@ footer div ul li {
 footer div ul li p {
   margin-left: 1rem;
 }
-footer .img_logo_wsp {
+footer div ul li .img_logo_wsp {
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -1882,7 +2119,7 @@ footer .img_logo_wsp {
     justify-content: center;
     align-items: center;
   }
-  footer .img_logo_wsp {
+  footer div ul li .img_logo_wsp {
     height: 5rem;
     width: 5rem;
     margin-left: 36rem;
@@ -1890,12 +2127,35 @@ footer .img_logo_wsp {
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px) {
-  footer div ul {
-    margin-bottom: -3rem;
+  footer section {
+    display: flex;
+    justify-content: center;
   }
-  footer .img_logo_wsp {
-    margin-left: 25rem;
-    margin-bottom: 2rem;
+  footer section h4 {
+    margin-right: 10rem;
+  }
+  footer section h5 {
+    margin-top: 0.1rem;
+    margin-right: 2rem;
+  }
+  footer div ul {
+    display: flex;
+  }
+  footer div ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div ul li a img {
+    margin-top: -1.3rem;
+  }
+  footer div ul li .p__footer {
+    margin-left: 30rem;
+  }
+  footer div ul li .img_logo_wsp {
+    height: 6rem;
+    width: 6rem;
+    left: 100rem;
   }
 }
 /*falta dar estilo*/

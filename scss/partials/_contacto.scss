@@ -4,8 +4,16 @@ header {
     div{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
+        a{
+            .img_logo{
+                margin-top: -12rem;
+                margin-left: 2rem;
+                height: 10rem;
+                width: 10rem;
+            }
+        }
         nav{
             margin-top: -1.2rem;
             margin-left: -1rem;
@@ -15,7 +23,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
-                margin-top: 6rem;
+                margin-top: 1rem;
                 margin-bottom: 1rem;
 
                 li{
@@ -31,31 +39,44 @@ header {
                 }
             }
         }
-    }
-
-    .img_logo{
-        height: 10rem;
-        width: 10rem;
-    }
-    .img_logo_bolso{
-        height: 5rem;
-        width: 5rem;
+        div{
+            .img_logo_bolso{
+                margin-top: -15rem; 
+                margin-right: 1rem;
+                height: 5rem;
+                width: 5rem;
+            }
+        }
     }
 }
 /*media queries 768 */
 @media screen and (min-width: 768px){
-    header{
+    header {
         div{
             a{
-                margin-top: 13rem;
-
                 .img_logo{
-                    height: 10rem;
-                    width: 10rem;
+                    margin-top: -30rem;
+                    margin-left: 2rem;
+                    height: 13rem;
+                    width: 13rem;
+                }
+            }
+            nav{
+                ul{
+                    font-size: 1.8rem;
+                    li{
+                        display: flexbox;
+                        flex-direction: row;
+                    }
                 }
             }
             div{
-                margin-top: 21rem;
+                .img_logo_bolso{
+                    margin-top: -35rem; 
+                    margin-right: 3rem;
+                    height: 5rem;
+                    width: 5rem;
+                }
             }
         }
     }
@@ -76,6 +97,7 @@ header {
             nav{
                 ul{
                     li{
+                        flex-direction: row;
                         a{
                             margin-left: 1.5rem;
                         }
@@ -84,7 +106,6 @@ header {
             }
             div{
                 .img_logo_bolso{
-                    margin-top: -17rem;
                     margin-right: 5rem;
                     height: 6rem;
                     width: 6rem;
@@ -202,10 +223,7 @@ article{
     article{
         div{
             ul{
-                li{
-                    margin-left: 10rem;
-                    margin-right: 10rem;
-                }
+                display: flex;
             }
         }
     }
@@ -236,41 +254,76 @@ footer{
                 p{
                     margin-left: 1rem;
                 }
+                .img_logo_wsp{
+                    height: 4rem;
+                    width: 4rem;
+                    position: fixed;
+                    bottom: 1rem;
+                    left: 31rem;
+                }
+            }
             }
         }
     }
-    .img_logo_wsp{
-        height: 4rem;
-        width: 4rem;
-        position: fixed;
-        bottom: 1rem;
-        left: 31rem;
-    }
-}
+    
 /*media queries 768 */
 @media screen and (min-width: 768px){
     footer{
         justify-content: center;
         align-items: center;
 
-        .img_logo_wsp{
-            height: 5rem;
-            width: 5rem;
-            margin-left: 36rem;
+        div{
+            ul{
+                li{
+                    .img_logo_wsp{
+                        height: 5rem;
+                        width: 5rem;
+                        margin-left: 36rem;
+                    }
+                }
+                }
+            }
         }
-    }
 }
 /* madia queries 1200 desktop */
 @media screen and (min-width: 1200px){
     footer{
-        div{
-            ul{
-                margin-bottom: -3rem;
-            }
+
+    section{
+        display: flex;
+        justify-content: center;
+        h4{
+            margin-right: 10rem;
         }
-        .img_logo_wsp{
-            margin-left: 25rem;
-            margin-bottom: 2rem;
+        h5{
+            margin-top: 0.1rem;
+            margin-right: 2rem;
         }
     }
+    div{
+        ul{
+            display: flex;            
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    img{
+                        margin-top: -1.3rem;
+                    }
+                }
+                .p__footer{
+                    margin-left: 30rem;
+                }
+
+                .img_logo_wsp{
+                    height: 6rem;
+                    width: 6rem;
+                    left: 100rem;
+                }
+            }
+            }
+        }
+    }
+        
 }
